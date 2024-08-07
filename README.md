@@ -4,6 +4,7 @@
 [Person 1] <-> [You] <-> [Person2]
 ```
 
+## Usage
 
 ```
 pip install -r requirements.txt
