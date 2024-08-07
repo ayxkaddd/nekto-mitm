@@ -1,5 +1,6 @@
-from typing import Dict
 import json
+from typing import Dict
+
 
 class Action:
     def __init__(self, name: str, params: Dict) -> None:

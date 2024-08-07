@@ -1,9 +1,10 @@
-from .messages.action import Action
-from .messages.notice import Notice
-
 from typing import Callable, List
 
 import websockets
+
+from .messages.action import Action
+from .messages.notice import Notice
+
 
 class Client:
     ws_endpoint = "wss://im.nekto.me/socket.io/?EIO=3&transport=websocket"

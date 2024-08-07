@@ -1,8 +1,9 @@
+import random
+from time import time
+
 from .client import Client
 from .messages.action import Action
 
-from time import time
-import random
 
 class Dialog:
     def __init__(self, id: int, client: Client) -> None:

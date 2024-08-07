@@ -1,9 +1,10 @@
-import sys
 import asyncio
+import sys
+
+from config import TOKENS
 from nektome.client import Client
 from nektome.dialog import Dialog
 from nektome.messages.notice import Notice
-from config import TOKENS
 
 if len(TOKENS) != 2:
     print("not enought auth tokens")
