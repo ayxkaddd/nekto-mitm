@@ -20,11 +20,9 @@ class Client:
 
     def open_dialog(self, dialog) -> None:
         self.dialog = dialog
-        print(f"[{self.token[:5]}] dialog {dialog.id} opened")
 
     async def close_dialog(self) -> None:
         if hasattr(self, "dialog") and self.dialog is not None:
-            print(f"[{self.token[:5]}] Closing dialog {self.dialog.id}")
             action = Action("anon.leaveDialog", {"dialogId": self.dialog.id})
             self.dialog = None
             await self.ws.send(action.to_string())
@@ -42,7 +40,6 @@ class Client:
             "wishAge": wish_age,
         })
         await self.ws.send(action.to_string())
-        print(f"[{self.token[:5]}] started search")
 
     async def connect(self) -> None:
         async with websockets.connect(self.ws_endpoint, ping_interval=None) as connection:

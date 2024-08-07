@@ -18,7 +18,6 @@ class Dialog:
             "randomId": f"{self.client.id}_{time()}0.{random.randint(10000000, 1000000000)}",
         })
         await self.client.ws.send(action.to_string())
-        # print(f"Message sent from dialog {self.id} by client {self.client.id}")
 
     async def read_message(self, id: int) -> None:
         action = Action(name="anon.readMessages", params={
@@ -26,4 +25,3 @@ class Dialog:
             "lastMessageId": id
         })
         await self.client.ws.send(action.to_string())
-        # print(f"Message {id} read in dialog {self.id} by client {self.client.id}")
