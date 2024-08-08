@@ -1,4 +1,9 @@
-venv
+venv/
 __pycache__
+anonmitm
 
 pyrightconfig.json
+tg.session
+tg2.session
+config.py
+test.py
