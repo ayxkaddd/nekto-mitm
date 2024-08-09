@@ -13,8 +13,6 @@ configuration = {
             "Напишите /search чтобы искать собеседника",
             "Если хотите, оставьте мнение о вашем собеседнике. Это поможет находить вам подходящих собеседников",
             "У вас нет собеседника 🤔",
-            "Вы закончили связь с вашим собеседником",
-            "Собеседник закончил с вами связь",
             "Мы временно ограничили вам пользование чатом за нарушение правил Анонимного чата",
         ]
     },
@@ -24,10 +22,11 @@ configuration = {
         "ignore_messages": [
             "Looking for a partner...",
             "If you wish, leave your feedback about your partner. It will help us find better partners for you in the future",
-            "Your partner has stopped the dialog 😞",
             "Partner found 😺",
-            "You stopped the dialog 🙄",
             "You have been banned due to",
+            "You are in the dialog right now 🤔",
+            "You have no partner 🤔",
+            "Type /search to find a partner",
         ]
     }
 }
